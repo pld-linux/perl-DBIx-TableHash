@@ -10,7 +10,8 @@ Summary(pl):	DBIx::TableHash - powi±zanie hasza z tabel± mysql oraz narzêdzia SQ
 Name:		perl-DBIx-TableHash
 Version:	1.04
 Release:	2
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	83106f75a33d37b0685ded08322711ba
