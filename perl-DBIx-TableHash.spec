@@ -9,7 +9,7 @@ Summary:	DBIx::TableHash - Tie a hash to a mysql table + SQL utils
 Summary(pl):	DBIx::TableHash - powi±zanie hasza z tabel± mysql oraz narzêdzia SQL
 Name:		perl-DBIx-TableHash
 Version:	1.04
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
