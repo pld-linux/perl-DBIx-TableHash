@@ -3,8 +3,8 @@
 %bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	DBIx
-%define	pnam	TableHash
+%define		pdir	DBIx
+%define		pnam	TableHash
 Summary:	DBIx::TableHash - Tie a hash to a MySQL table + SQL utils
 Summary(pl):	DBIx::TableHash - powi±zanie hasza z tabel± MySQL oraz narzêdzia SQL
 Name:		perl-DBIx-TableHash
