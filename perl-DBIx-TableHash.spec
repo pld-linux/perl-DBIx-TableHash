@@ -5,19 +5,19 @@
 %define	pdir	DBIx
 %define	pnam	TableHash
 Summary:	DBIx::TableHash - Tie a hash to a mysql table + SQL utils
-#Summary(pl):	
+Summary(pl):	DBIx::TableHash - powi±zanie hasza z tabel± mysql oraz narzêdzia SQL
 Name:		perl-DBIx-TableHash
 Version:	1.02
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-26
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-DBI
 BuildRequires:	perl(Data::Dumper)
 %endif
+BuildRequires:	rpm-perlprov >= 3.0.3-26
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,8 +26,10 @@ The DBHash object is designed to tie a hash to a table or a subset of
 records in a table in a DBI database (only tested with mysql in the
 current version, but expected to work with any vendor).
 
-# %description -l pl
-# TODO
+%description -l pl
+Obiekt DBHash s³u¿y do powi±zania hasza z tabel± lub podzbiorem
+rekordów w tabeli w bazie danych DBI (testowane tylko z aktualn±
+wersj± mysql, ale powinno dzia³aæ z ka¿d± baz±).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -35,6 +37,7 @@ current version, but expected to work with any vendor).
 %build
 perl Makefile.PL
 %{__make}
+
 %{!?_without_tests:%{__make} test}
 
 %install
