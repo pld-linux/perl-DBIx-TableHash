@@ -16,7 +16,6 @@ Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%
 BuildRequires:	perl >= 5.6
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-DBI
-BuildRequires:	perl(Data::Dumper)
 %endif
 BuildRequires:	rpm-perlprov >= 3.0.3-26
 BuildArch:	noarch
