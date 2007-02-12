@@ -6,7 +6,7 @@
 %define		pdir	DBIx
 %define		pnam	TableHash
 Summary:	DBIx::TableHash - Tie a hash to a MySQL table + SQL utils
-Summary(pl):	DBIx::TableHash - powi±zanie hasza z tabel± MySQL oraz narzêdzia SQL
+Summary(pl.UTF-8):   DBIx::TableHash - powiÄ…zanie hasza z tabelÄ… MySQL oraz narzÄ™dzia SQL
 Name:		perl-DBIx-TableHash
 Version:	1.04
 Release:	3
@@ -28,10 +28,10 @@ The DBHash object is designed to tie a hash to a table or a subset of
 records in a table in a DBI database (only tested with MySQL in the
 current version, but expected to work with any vendor).
 
-%description -l pl
-Obiekt DBHash s³u¿y do powi±zania hasza z tabel± lub podzbiorem
-rekordów w tabeli w bazie danych DBI (testowane tylko z aktualn±
-wersj± MySQL, ale powinno dzia³aæ z ka¿d± baz±).
+%description -l pl.UTF-8
+Obiekt DBHash sÅ‚uÅ¼y do powiÄ…zania hasza z tabelÄ… lub podzbiorem
+rekordÃ³w w tabeli w bazie danych DBI (testowane tylko z aktualnÄ…
+wersjÄ… MySQL, ale powinno dziaÅ‚aÄ‡ z kaÅ¼dÄ… bazÄ…).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
