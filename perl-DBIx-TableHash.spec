@@ -6,7 +6,7 @@
 %define		pdir	DBIx
 %define		pnam	TableHash
 Summary:	DBIx::TableHash - Tie a hash to a MySQL table + SQL utils
-Summary(pl.UTF-8):   DBIx::TableHash - powiązanie hasza z tabelą MySQL oraz narzędzia SQL
+Summary(pl.UTF-8):	DBIx::TableHash - powiązanie hasza z tabelą MySQL oraz narzędzia SQL
 Name:		perl-DBIx-TableHash
 Version:	1.04
 Release:	3
