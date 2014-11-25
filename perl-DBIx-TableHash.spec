@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# Do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	DBIx
 %define		pnam	TableHash
+%include	/usr/lib/rpm/macros.perl
 Summary:	DBIx::TableHash - Tie a hash to a MySQL table + SQL utils
 Summary(pl.UTF-8):	DBIx::TableHash - powiązanie hasza z tabelą MySQL oraz narzędzia SQL
 Name:		perl-DBIx-TableHash
@@ -15,11 +15,12 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	83106f75a33d37b0685ded08322711ba
+URL:		http://search.cpan.org/dist/DBIx-TableHash/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-DBI
 %endif
-BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
